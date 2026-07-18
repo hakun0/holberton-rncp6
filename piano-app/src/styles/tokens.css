@@ -1,0 +1,61 @@
+:root {
+  /* Colors — matched to the original mockup: black stage, bronze hardware, wine-red velvet */
+  --bg: #0a0a0a;
+  --bg-elevated: #1c1416;
+  --bg-elevated-2: #241a1c;
+  --ebony: #000000;
+  --ivory: #f5f1e8;
+  --ivory-dim: #c9c6bd;
+  --muted: #8b8680;
+  --gold: #ab7d43;
+  --gold-bright: #c79b5c;
+  --wine: #3d1518;
+  --wine-light: #4a1a1e;
+  --red: #8f2a2a;
+  --red-bright: #a83636;
+  --cream: #f5f1e8;
+  --teal: #4fa69c;
+  --danger: #e0665a;
+  --border: rgba(245, 241, 232, 0.1);
+  --border-strong: rgba(245, 241, 232, 0.18);
+
+  /* Typography */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", "Courier New", monospace;
+
+  /* Type scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.5rem;
+  --text-4xl: 3.5rem;
+
+  /* Spacing (8px base) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+  --space-10: 4rem;
+  --space-12: 6rem;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-gold: 0 0 0 1px rgba(171, 125, 67, 0.4), 0 8px 24px rgba(171, 125, 67, 0.12);
+
+  --container: 1120px;
+  --transition: 180ms ease;
+}

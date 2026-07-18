@@ -1,0 +1,68 @@
+.account {
+  min-height: calc(100vh - 140px);
+  padding: var(--space-10) 0;
+}
+
+.account__inner {
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.account__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.account__brand-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--gold);
+  border-radius: var(--radius-md);
+  color: var(--red-bright);
+  font-size: var(--text-xl);
+  flex-shrink: 0;
+}
+
+.account__brand-title {
+  font-size: var(--text-2xl);
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+
+.account__identity {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  background: var(--ebony);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-5);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+.account__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--ivory);
+  flex-shrink: 0;
+}
+
+.account__action {
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: var(--space-5);
+  font-weight: 700;
+}
+
+.account__action--danger {
+  margin-top: var(--space-4);
+}
