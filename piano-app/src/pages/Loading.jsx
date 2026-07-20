@@ -5,10 +5,19 @@ import Footer from "../components/Footer";
 import "./Loading.css";
 import "./Home.css";
 
-const POPULAR_SONGS = [
-  { title: "Clair de Lune", artist: "Claude Debussy", album: "Suite bergamasque" },
-  { title: "River Flows in You", artist: "Yiruma", album: "First Love" },
-  { title: "Comptine d'un autre été", artist: "Yann Tiersen", album: "Amélie" },
+const STEPS = [
+  {
+    label: "Colle le lien",
+    text: "Copie l'URL d'une vidéo YouTube de 4 minutes maximum et colle-la ci-dessus.",
+  },
+  {
+    label: "On extrait la mélodie",
+    text: "Notre algorithme isole la ligne mélodique principale, peu importe l'instrument d'origine.",
+  },
+  {
+    label: "Reçois ta partition",
+    text: "Les notes sont réattribuées au piano et affichées en défilement façon Synthesia.",
+  },
 ];
 
 export default function Loading() {
@@ -74,23 +83,18 @@ export default function Loading() {
 
         <div className="hero__divider" />
 
-        <section className="popular">
+        <section className="how">
           <div className="container">
-            <h2 className="popular__title">Morceaux populaires</h2>
-            <ul className="popular__list">
-              {POPULAR_SONGS.map((song, i) => (
-                <li className="popular__item" key={song.title}>
-                  <span className="popular__index">{i + 1}</span>
-                  <span className="popular__cover">cover
-of song</span>
-                  <div className="popular__info">
-                    <strong>{song.title}</strong>
-                    <span className="popular__artist">{song.artist}</span>
-                    <span className="popular__album">{song.album}</span>
-                  </div>
-                </li>
+            <h2 className="how__title">Comment ça marche</h2>
+            <div className="how__grid">
+              {STEPS.map((step, i) => (
+                <div className="how__card card" key={step.label}>
+                  <span className="how__index">{String(i + 1).padStart(2, "0")}</span>
+                  <h3 className="how__label">{step.label}</h3>
+                  <p>{step.text}</p>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </section>
       </main>

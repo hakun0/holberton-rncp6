@@ -6,14 +6,14 @@ import "./Home.css";
 const STEPS = [
   {
     label: "Colle le lien",
-    text: "Copie l'URL d'une vidéo YouTube de 4 minutes maximum et colle-la ci-dessus.",
+    text: "Copie l'URL d'une vidéo YouTube de 2 minutes maximum et colle-la ci-dessus.",
   },
   {
     label: "On extrait la mélodie",
     text: "Notre algorithme isole la ligne mélodique principale, peu importe l'instrument d'origine.",
   },
   {
-    label: "Reçois ta partition",
+    label: 'Reçois ta "partition"',
     text: "Les notes sont réattribuées au piano et affichées en défilement façon Synthesia.",
   },
 ];
@@ -93,7 +93,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
       </main>
       <Footer />
     </>

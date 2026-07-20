@@ -1,3 +1,7 @@
+/* main{
+  background: linear-gradient(15deg, red 15% , black 15%);
+} */
+
 .hero {
   padding: var(--space-10) 0 var(--space-8);
 }
