@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  # La base de données PostgreSQL
+  db:
+    image: postgres:15-alpine
+    container_name: melo_db
+    restart: always
+    environment:
+      POSTGRES_USER: melo_user
+      POSTGRES_PASSWORD: melo_password
+      POSTGRES_DB: melo_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
