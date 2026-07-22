@@ -1,7 +1,5 @@
-version: '3.8'
-
 services:
-  # La base de données PostgreSQL
+  # 1. La base de données PostgreSQL
   db:
     image: postgres:15-alpine
     container_name: melo_db
@@ -14,6 +12,20 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+
+  # 2. Le serveur Backend FastAPI
+  backend:
+    build: .
+    container_name: melo_backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://melo_user:melo_password@db:5432/melo_db
+    volumes:
+      - .:/app
+    depends_on:
+      - db
 
 volumes:
   postgres_data:

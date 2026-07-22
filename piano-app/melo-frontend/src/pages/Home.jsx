@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "./Home.css";
+
 const STEPS = [
   {
     label: "Colle le lien",
@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+
       <main>
         <section className="hero">
           <div className="container hero__inner">
